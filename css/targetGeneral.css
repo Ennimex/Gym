@@ -1,0 +1,120 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+header {
+    background-color: #000; /* Fondo negro */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 10; /* Asegura que el encabezado esté detrás de la imagen */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+    position: absolute; /* Posición absoluta para que se muestre sobre el menú */
+    top: 50%; /* Centrado vertical relativo al contenedor */
+    left: 20px; /* Separación desde la izquierda */
+    transform: translateY(-50%); /* Ajusta la posición para que quede perfectamente centrado */
+    z-index: 100; /* Asegura que la imagen esté al frente */
+}
+
+/* Menú principal */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mantiene el menú principal en fila */
+    margin-left: 100px; /* Desplaza el menú hacia la derecha para evitar solapamiento con la imagen */
+}
+
+ul > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+ul > li > a:hover {
+    color: #ff4747;
+    border-bottom: 2px solid #ff4747;
+}
+
+/* Submenú */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Ubica el submenú justo debajo del menú principal */
+    left: 0;
+    background-color: #fff; /* Fondo blanco */
+    padding: 0; /* Quita cualquier padding adicional */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px); /* Comienza más arriba para la animación */
+    transition: all 0.3s ease;
+    z-index: 1000;
+    width: 200px; /* Asegura un ancho fijo para el submenú */
+    display: flex; /* Flexbox para manejar los elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+ul > li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Aparece con una animación hacia abajo */
+}
+
+.submenu li {
+    margin: 0;
+    display: block; /* Asegura que cada opción esté en una línea */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.submenu li a {
+    font-size: 14px;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #000; /* Texto negro */
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre opciones */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.submenu li a:hover {
+    background-color: #ff4747; /* Fondo rojo al pasar el cursor */
+    color: #fff; /* Texto blanco */
+}
+
+/* Quitar la última línea divisoria */
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+/* Mensaje de bienvenida */
+.welcome-message {
+    margin-left: auto; /* Empuja el mensaje hacia la derecha */
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Negrita */
+    color: #ff4747; /* Color rojo */
+    padding-left: 20px; /* Espaciado desde el menú */
+    align-self: center; /* Alinea verticalmente con el menú */
+}

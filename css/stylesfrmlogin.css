@@ -1,0 +1,150 @@
+/* General Body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: backgroundPulse 1s infinite alternate;
+}
+
+/* Fondo animado */
+@keyframes backgroundPulse {
+    from {
+        background-color: #121212;
+    }
+    to {
+        background-color: #1e1e1e;
+    }
+}
+
+/* Formulario */
+form {
+    background: linear-gradient(145deg, #1c1c1c, #232323);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(100, 181, 246, 0.3);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #64b5f6;
+    font-size: 26px;
+    text-shadow: 0 0 10px rgba(100, 181, 246, 0.8), 0 0 20px rgba(100, 181, 246, 0.6);
+}
+
+form p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #e57373;
+}
+
+/* Etiquetas */
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    color: #bdbdbd;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Entrada y Select */
+form select,
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+form select:hover,
+form input:hover {
+    border-color: #64b5f6;
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.5), 0 0 15px rgba(100, 181, 246, 0.3);
+}
+
+form select:focus,
+form input:focus {
+    border-color: #64b5f6;
+    outline: none;
+    box-shadow: 0 0 15px rgba(100, 181, 246, 0.8);
+}
+
+/* Botón */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #64b5f6, #42a5f5);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 8px 15px rgba(100, 181, 246, 0.3);
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(100, 181, 246, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+form button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 5px 10px rgba(100, 181, 246, 0.4);
+}
+
+/* Links */
+form a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+form a:hover {
+    color: #42a5f5;
+    text-shadow: 0 0 10px rgba(100, 181, 246, 0.8);
+}
+
+/* Pregunta personalizada */
+#preguntaPersonalizada {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Sombras animadas */
+form input:focus,
+form select:focus,
+form button:hover {
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.6), 0 0 20px rgba(255, 255, 255, 0.2);
+}

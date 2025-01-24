@@ -1,0 +1,94 @@
+/* Fondo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #ffffff; /* Texto blanco por defecto */
+}
+
+/* Bienvenida */
+.welcome-message {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ff0000; /* Color negro para destacar */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #000; /* Color negro para el título */
+}
+
+/* Diseño de las tarjetas de productos */
+.product-cards {
+    margin: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #000000; /* Fondo negro para las tarjetas */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #ffffff; /* Texto blanco dentro de las tarjetas */
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Títulos en blanco */
+}
+
+.product-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ffffff; /* Texto blanco */
+}
+
+.product-card p strong {
+    color: #ff0000; /* Negritas en rojo */
+}
+
+/* Botón Editar */
+.edit-button {
+    background-color: #ff4747; /* Rojo */
+    color: #000000; /* Letras negras */
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button:hover {
+    background-color: #cc3838; /* Rojo más oscuro */
+    transform: scale(1.05); /* Agrandar ligeramente al pasar el cursor */
+}
+
+.edit-button:active {
+    background-color: #a52a2a; /* Rojo aún más oscuro al hacer clic */
+    transform: scale(1); /* Regresa al tamaño original */
+}
+

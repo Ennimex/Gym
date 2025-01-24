@@ -1,0 +1,117 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+h1, h2 {
+    color: #ff4c4c;
+    text-align: center;
+}
+
+/* Authentication Message */
+.auth-message {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auth-message a {
+    color: #ff4c4c;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #ff4c4c;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-message a:hover {
+    background-color: #ff4c4c;
+    color: #1a1a1a;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #2b2b2b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Products (Grid Layout) */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste dinámico para 3 columnas */
+    gap: 20px; /* Espacio entre columnas y filas */
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-card {
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    min-width: 250px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 76, 76, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ff4c4c;
+}
+
+.product-card p {
+    color: #f5f5f5;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    color: #1a1a1a;
+    background-color: #ff4c4c;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card a:hover {
+    background-color: #e04343;
+}
+
+/* Footer */
+footer {
+    background:#1a1a1a;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
